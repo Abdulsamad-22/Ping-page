@@ -1,0 +1,237 @@
+body{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    width: 3.75rem;
+    margin-top: 1.125rem;
+}
+
+@media(max-width: 600px) {
+    .logo{
+        width: 45px;
+    }
+}
+
+.header-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-text h1{
+    font-size: 2.5rem;
+    font-weight: 200;
+    color: rgb(125, 126, 129);
+    margin-top: 0rem;
+    margin-bottom: 0rem
+}
+
+@media(max-width: 600px) {
+    .header-text h1{
+        font-size: 1.75rem;
+        margin-top: 0.8rem;
+    }
+}
+
+h1 span{
+    font-weight: 600;
+    color: black;
+}
+
+.header-text p{
+    font-size: 1.25rem;
+    color: rgb(125, 126, 129);
+    margin-top: 0.25rem;
+}
+
+@media(max-width: 600px) {
+    .header-text p{
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+}
+
+.input-button-container{
+    display: flex;
+    flex-direction: row;
+    gap: 7.5rem;
+    align-items: top;
+    margin-top: 0.25rem;
+}
+
+@media(max-width: 600px) {
+    .input-button-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.625rem;
+        max-width: 15.625rem;
+    }
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: 15.625rem;
+}
+
+@media(max-width: 600px) {
+    .input-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.email-input{
+    border-radius: 24px;
+    border: 0.3px solid rgb(231, 231, 231);
+    width: 20rem;
+    padding: 0.75rem 1.25rem;
+    outline: none;
+}
+
+@media(max-width: 600px) {
+    .email-input{
+        max-width: 100%;
+    }
+}
+
+.email-input::placeholder{
+    font-size: 0.875rem;
+    color: rgb(182, 180, 180);
+}
+
+.email-input:focus{
+    border-color: hsl(354, 100%, 66%);
+    border-width: 1.8px;
+}
+
+.cta{
+    border-radius: 24px;
+    border: none;
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    width: 8.125rem;
+    padding: 0.875rem 1.25rem;
+    cursor: pointer;
+}
+
+.cta:active{
+    background-color: rgb(116, 128, 238);
+}
+
+@media(max-width: 600px) {
+    .cta{
+        min-width: 17.5rem;
+    }
+}
+
+.error-message{
+    display: grid;
+    grid-row: 1fr;
+    font-size: 0.75rem;
+    color: hsl(354, 100%, 66%);
+    margin-left: 1.25rem;
+    margin-top: 0.25rem;
+}
+
+.image-container{
+    margin-top: 1.75rem;
+    margin-bottom: 0.625rem;
+}
+
+@media(max-width: 600px) {
+    .image-container{
+        margin-bottom: 1.875rem;
+    }
+}
+
+.header-image{
+    max-width: 30rem;
+}
+
+@media(max-width: 600px) {
+    .header-image{
+        max-width: 18.75rem;
+    }
+}
+
+.social-handles{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+@media(max-width: 600px) {
+    .socials-handles{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0.625rem;
+    height: 0.625rem;
+    padding: 0.75rem;
+    color: hsl(223, 87%, 63%);
+    border-radius: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+@media(max-width: 600px) {
+    .socials{
+        display: grid;
+        align-items: center;
+        width: 0.5rem;
+        height: 0.5rem;
+        padding: 0.75rem;
+        position: relative;
+    }
+}
+
+.socials:hover{
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+}
+
+.facebook-icon, .twitter-icon, .instagram-icon{
+    max-width: 1.25rem;
+}
+
+@media(max-width: 600px) {
+    .twitter-icon, .instagram-icon{
+        position: absolute;
+        left: 10px;
+        top: 8px;
+    }
+}
+
+@media(max-width: 600px) {
+    .facebook-icon{
+        position: absolute;
+        left: 12px;
+        top: 8px;
+    }
+}
+
+.copyright{
+    font-size: 0.65rem;
+    color: rgb(125, 126, 129);
+    margin-top: 0.5rem;
+}
