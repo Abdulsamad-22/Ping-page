@@ -1,22 +1,22 @@
-
-
 const submitButton = document.querySelector('.js-cta');
 
 submitButton.addEventListener('click', ()=> {
     checkEmail();
 });
 
-// checks if the it is a valid email
+// Checks if the it is a valid email
 
 function checkEmail () {
     const inputElement = document.querySelector('.js-email-input');
 
     const emailValue = inputElement.value;
 
-    // creates the paragraph element for the error message
+    // Creates the paragraph element for the error message
     const html = document.createElement('p');
 
+    // Removes any existing error message
     const divElement = document.querySelector('.input-container');
+    divElement.querySelectorAll('.error-message').forEach(msg => msg.remove());
 
     if (!emailValue.endsWith('@gmail.com')) {
 
